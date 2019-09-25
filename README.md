@@ -1,0 +1,1 @@
+# Intelligent-Recognition-of-Resistance
