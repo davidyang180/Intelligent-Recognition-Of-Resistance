@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/setting_agreement" />
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/password_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_leftText="@string/password_reset"
+        app:bar_rightIcon="@mipmap/ico_go_black" />
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/email_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_leftText="@string/email_reset"
+        app:bar_rightIcon="@mipmap/ico_go_black" />
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/phone_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_leftText="@string/phone_reset"
+        app:bar_rightIcon="@mipmap/ico_go_black" />
+
+
+
+</LinearLayout>

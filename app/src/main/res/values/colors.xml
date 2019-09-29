@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#5A8DDF</color>
+    <color name="windowBackground">#F4F4F4</color>
+    <color name="textColor">#333333</color>
+    <color name="textColorHint">#757575</color>
+
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="iron">#CCCCCC</color>
+
+    <!-- 按钮按压时的颜色 -->
+    <color name="colorButtonPressed">#1976d2</color>
+    <!-- 按钮禁用时的颜色 -->
+    <color name="colorButtonDisable">#DDDDDD</color>
+    <!-- 分割线的颜色 -->
+    <color name="colorLine">#ECECEC</color>
+
+
+    <color name="about_page_background">#f1f1f1</color>
+    <color name="about_page_category_text_color">#757575</color>
+    <color name="about_page_card_text_color">#de000000</color>
+    <color name="about_page_link_text_color">@android:color/black</color>
+    <color name="about_page_card_selected">#44000000</color>
+    <color name="about_page_card_normal">#ffffff</color>
+    <color name="about_page_card_ripple">#33000000</color>
+    <color name="about_page_line">#eae9e9</color>
+    <color name="about_page_name_color">@color/about_page_card_text_color</color>
+    <color name="about_page_desc_color">@color/about_page_hint</color>
+    <color name="about_page_license_title">@color/about_page_card_text_color</color>
+    <color name="about_page_hint">#757575</color>
+</resources>

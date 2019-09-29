@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="1"
+        android:title="fragment菜单栏第一项"/>
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="2"
+        android:title="fragment菜单栏第二项"/>
+    <item
+        android:id="@+id/menu_quit"
+        android:orderInCategory="3"
+        android:title="fragment菜单栏第三项"/>
+
+
+</menu>

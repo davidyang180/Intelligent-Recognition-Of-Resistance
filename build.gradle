@@ -1,0 +1,39 @@
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.novoda:bintray-release:0.5.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven {url 'https://maven.google.com'}
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public"}
+        maven { url 'https://jitpack.io' }
+        maven{ url 'https://dl.google.com/dl/android/maven2/'}
+
+
+    }
+
+    //解决app:mockableAndroidJar错误的问题
+    gradle.taskGraph.whenReady {
+        tasks.each { task ->
+            if (task.name.equals('mockableAndroidJar')) {
+                task.enabled = false
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

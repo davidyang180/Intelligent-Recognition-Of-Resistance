@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.recognition.demo.ui.fragment.TestFragmentD">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_test_d_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backButton="false"
+        app:title="@string/home_nav_me" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_40">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/space_180"
+            android:layout_height="@dimen/space_180"
+            android:layout_marginLeft="@dimen/space_40"
+            android:src="@mipmap/david"
+            app:civ_border_color="@color/white60"
+            app:civ_border_width="@dimen/space_2" />
+
+            <TextView
+                android:id="@+id/den"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right|center"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:textSize="40sp"></TextView>
+        />
+
+        </LinearLayout>
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/sb_setting_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        app:bar_leftText="@string/setting_language"
+        app:bar_rightIcon="@mipmap/ico_go_black"
+        tools:bar_rightHint="@string/setting_language_simple" />
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/sb_setting_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_leftText="@string/setting_update"
+        app:bar_rightIcon="@mipmap/ico_go_black" />
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/sb_setting_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        app:bar_leftText="@string/setting_agreement"
+        app:bar_rightIcon="@mipmap/ico_go_black" />
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/sb_setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_leftText="@string/setting_about"
+        app:bar_rightIcon="@mipmap/ico_go_black" />
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/sb_setting_auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        app:bar_leftText="@string/setting_auto">
+
+        <com.recognition.widget.SwitchButton
+            android:id="@+id/sb_setting_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginRight="@dimen/space_30" />
+
+    </com.recognition.demo.widget.SettingBar>
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/sb_setting_banbenhao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        app:bar_leftText="@string/setting_banbenhao"
+        app:bar_rightIcon="@mipmap/ico_go_black" />
+
+    <com.recognition.demo.widget.SettingBar
+        android:id="@+id/sb_setting_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        app:bar_leftColor="@color/red"
+        app:bar_leftText="@string/setting_exit" />
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+<!--
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_60"
+            android:layout_marginRight="@dimen/space_60"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_test_dialog"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:text="点我进入对话框案例" />
+
+            <Button
+                android:id="@+id/btn_test_login"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:text="点我进入登录界面" />
+
+            <Button
+                android:id="@+id/btn_test_register"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:text="点我进入注册界面" />
+
+            <Button
+                android:id="@+id/btn_test_forget"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:text="点我进入忘记密码" />
+
+            <Button
+                android:id="@+id/btn_test_reset"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:text="点我进入重置密码" />
+
+            <Button
+                android:id="@+id/btn_test_setting"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:text="点我进入设置界面" />
+
+            <Button
+                android:id="@+id/btn_test_about"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:text="点我进入关于界面" />
+
+            <Button
+                android:id="@+id/btn_test_browser"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:text="点我进入浏览器界面" />
+
+            <Button
+                android:id="@+id/btn_test_pay"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_60"
+                android:layout_marginBottom="@dimen/space_60"
+                android:text="丢包辣条给作者" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+-->
+</LinearLayout>
